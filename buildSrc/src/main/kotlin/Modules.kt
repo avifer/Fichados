@@ -4,7 +4,7 @@ object Modules {
     const val COMMON = ":common"
     const val DATA = ":data"
     const val DOMAIN = ":domain"
-    const val FEATURE_BLOCKCHAIN = ":feature:blockchain"
+    const val FEATURE_HOME = ":feature:home"
     const val FEATURE_SPLASH = ":feature:splash"
     const val NAVIGATION = ":navigation"
 }

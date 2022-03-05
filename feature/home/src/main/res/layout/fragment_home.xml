@@ -3,26 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="es.avifer.fichados.feature.blockchain.ui.view.fragment.HomeFragment">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/fragment_home__toolbar__toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/fragment_home__toolbar__toolbar__height_toolbar"
-        android:background="@color/purple_200"
-        android:paddingStart="@dimen/fragment_home__toolbar__toolbar__padding_start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/fragment_home__toolbar__toolbar__title"
-        app:titleTextColor="@color/white" />
+    tools:context="es.avifer.fichados.feature.home.ui.view.fragment.HomeFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/fragment_home__swipe__refresh"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_home__toolbar__toolbar">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

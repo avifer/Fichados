@@ -11,7 +11,7 @@ abstract class DatabaseApp : RoomDatabase() {
     abstract fun blockchainDao(): BlockchainDao
 
     companion object {
-        const val DATABASE_NAME = "blockchainDB"
+        const val DATABASE_NAME = "fichadosDB"
 
         //CryptoDbo
         const val TABLE_CRYPTO_DBO = "cryptos"

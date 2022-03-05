@@ -4,7 +4,7 @@ include(
     ":common",
     ":data",
     ":domain",
-    ":feature:blockchain",
+    ":feature:home",
     ":feature:splash",
     ":navigation",
 )

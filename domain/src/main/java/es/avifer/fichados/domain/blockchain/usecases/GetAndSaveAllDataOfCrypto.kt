@@ -14,20 +14,14 @@ class GetAndSaveAllDataOfCrypto @Inject constructor(
     operator fun invoke(cryptoPair: String): Flow<Response<CryptoBo>> {
         return flow {
             emit(Response.Loading())
-            val priceOnlineCrypto = repositoryBlockchain.getDataOnlineOfCrypto(cryptoPair)
             val priceOfflineCrypto = repositoryBlockchain.getDataOfflineOfCrypto(cryptoPair)
 
-            if (priceOnlineCrypto.isSuccessful()
-                && priceOfflineCrypto.isSuccessful()
+            if (priceOfflineCrypto.isSuccessful()
             ) {
-                val priceOnline = priceOnlineCrypto.getData()?.priceOnline ?: 0.0
                 val priceOffline = priceOfflineCrypto.getData()?.priceOffline ?: 0.0
-                emit(saveDataLocal(CryptoBo(cryptoPair, priceOnline, priceOffline)))
+                emit(saveDataLocal(CryptoBo(cryptoPair, 0.0, priceOffline)))
 
             } else {
-                priceOnlineCrypto.getError()?.let {
-                    emit(Response.Error<CryptoBo>(it))
-                }
                 priceOfflineCrypto.getError()?.let {
                     emit(Response.Error<CryptoBo>(it))
                 }

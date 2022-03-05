@@ -1,4 +1,4 @@
-package es.avifer.fichados.feature.blockchain.ui.viewmodel
+package es.avifer.fichados.feature.home.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import dagger.hilt.android.lifecycle.HiltViewModel

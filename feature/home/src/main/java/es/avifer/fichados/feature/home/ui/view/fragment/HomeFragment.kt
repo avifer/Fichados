@@ -1,4 +1,4 @@
-package es.avifer.fichados.feature.blockchain.ui.view.fragment
+package es.avifer.fichados.feature.home.ui.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import es.avifer.fichados.common.view.BaseFragment
 import es.avifer.fichados.common.view.toast
 import es.avifer.fichados.domain.entities.blockchain.CryptoBo
 import es.avifer.fichados.domain.entities.response.getStringError
-import es.avifer.fichados.feature.blockchain.R
-import es.avifer.fichados.feature.blockchain.databinding.FragmentHomeBinding
-import es.avifer.fichados.feature.blockchain.ui.viewmodel.HomeFragmentViewModel
+import es.avifer.fichados.feature.home.ui.viewmodel.HomeFragmentViewModel
+import es.avifer.fichados.feature.home.R
+import es.avifer.fichados.feature.home.databinding.FragmentHomeBinding
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment() {

@@ -15,7 +15,7 @@ class SplashFragmentViewModel : BaseViewModel() {
         private const val DELAY_SPLASH = 1500L
     }
 
-    fun goToBlockchain(versionName: String, updateApp: () -> Unit) {
+    fun goToHome(versionName: String, updateApp: () -> Unit) {
         with(Firebase.remoteConfig) {
             fetchAndActivate().addOnCompleteListener {
                 if (it.isSuccessful && needForceUpdate(versionName)) {
@@ -23,7 +23,7 @@ class SplashFragmentViewModel : BaseViewModel() {
 
                 } else {
                     runDelayMain(DELAY_SPLASH) {
-                        navigate(SplashFragmentDirections.navigateFromSplashFeatureToBlockchainFeature())
+                        navigate(SplashFragmentDirections.navigateFromSplashFeatureToHomeFeature())
                     }
                 }
 
