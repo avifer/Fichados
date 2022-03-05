@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="es.avifer.abp">
+    package="es.avifer.fichados">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="es.avifer.abp.MainApplication"
+        android:name="es.avifer.fichados.MainApplication"
         android:allowBackup="true"
         android:icon="@drawable/bitcoin"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidBaseProject">
+        android:theme="@style/Theme.Fichados">
         <activity
-            android:name="es.avifer.abp.HostActivity"
+            android:name="es.avifer.fichados.HostActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
